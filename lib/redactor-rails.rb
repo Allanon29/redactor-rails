@@ -31,11 +31,11 @@ module RedactorRails
     RedactorRails::Document
   end
 
-  def self.devise_user
+  def self.devise_member
     %s(user)
   end
 
-  def self.devise_user_key
-    "#{self.devise_user.to_s}_id".to_sym
+  def self.devise_member_key
+    "#{self.devise_member.to_s}_id".to_sym
   end
 end
