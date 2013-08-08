@@ -10,6 +10,8 @@ $(document).ready(
     { "imageUpload":"/redactor_rails/pictures?" + params,
       "imageGetJson":"/redactor_rails/pictures",
       "path":"/assets/redactor-rails",
-      "css":"style.css"}
+      "css":"style.css",
+      "lang":"hu",
+      "buttonSource": "false" }
   );
 });
