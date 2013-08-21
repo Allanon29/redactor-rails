@@ -23,4 +23,11 @@ class RedactorRails::PicturesController < ApplicationController
       render :nothing => true
     end
   end
+  
+  def destroy
+    @member = current_member
+    @picture = Picture.find(params[:file][:format])
+    @picture.destroy
+    redirect_to root_path
+  end
 end
